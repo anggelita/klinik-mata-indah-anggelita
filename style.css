@@ -1,0 +1,492 @@
+:root {
+    --primary: #0756A5;
+    --secondary: #168DE2;
+    --accent: #55B8F5;
+    --background: #F2F8FF;
+    --white: #FFFFFF;
+    --text: #142F50;
+    --text-light: #64748B;
+    --border: #D5E5F5;
+    --footer: #092B50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+.navbar {
+    background-image: linear-gradient(rgba(7, 86, 165, 0.6), rgba(7, 86, 165, 0.4)), url(fotoklinikbenar.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 12px 0;
+    list-style: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.hero-content {
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.navbar h1.judul {
+    color: var(--white);
+    font-size: 32px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: var(--background);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.layanan {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section-desc {
+    color: var(--text-light);
+    margin: 0 auto 40px auto;
+    font-size: 15px;
+}
+
+.layanan-container2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.kotak2 {
+    background-color:  #cce4ff;
+    padding: 15px 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.kotak2 a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.kotak2:hover {
+    background-color: var(--secondary);
+    transform: translateY(-5px);
+}
+
+
+.kotak {
+    background-color: #e6f2ff;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kotak:hover {
+    transform: translateY(-5px);
+    background-color: #cce4ff;
+    box-shadow: 0 10px 15px rgba(7, 86, 165, 0.1);
+}
+
+.kotak h2 {
+    color: var(--primary);
+    font-size: 18px;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+.kotak a{
+        text-decoration: none;
+}
+
+
+
+.judul{
+    margin-top: 50px;
+}
+.kotak2{
+    display: grid;
+}
+
+.penjelasan{
+    width: 100%;
+    max-width: 1100px;
+    margin: 70px auto 30px;
+    padding: 30px 20px;
+}
+
+.informasi {
+    max-width: 1100px;
+    width: 90%;
+    margin: 40px auto;
+    scroll-margin-top: 80px;
+}
+
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 12px rgba(7, 86, 165, 0.08);
+    scroll-margin-top: 85px;
+}
+
+.gambar {
+    flex: 0 0 280px;
+}
+
+.gambar img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.isi {
+    flex: 1;
+}
+
+.isi h2 {
+    color: var(--primary);
+    text-align: left;
+    font-size: 26px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.isi h3 {
+    color: var(--secondary);
+    font-size: 18px;
+    margin: 18px 0 7px;
+}
+
+.isi p {
+    color: var(--text-light);
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+.info-card:hover {
+    box-shadow: 0 8px 20px rgba(7, 86, 165, 0.13);
+}
+
+.jadwal {
+    padding: 60px 20px;
+    background-color: var(--background);
+}
+
+.table-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tabel {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+}
+
+th {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 14px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.tabel td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+}
+
+.tabel tr:hover {
+    background-color: #f8fbff;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.badge.buka {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.badge.tutup {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.kontak-section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.kontak {
+    text-align: center;
+    background-color: var(--background);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* =========================
+   TAMPILAN TABLET
+========================= */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        height: 350px;
+    }
+
+    .nav-links {
+        gap: 5px;
+        padding: 8px 0;
+    }
+
+    .nav-links a {
+        margin: 2px 0;
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
+    .navbar h1.judul {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .layanan {
+        padding: 40px 15px;
+    }
+
+    /* Kotak layanan menjadi 2 kolom */
+    .layanan-container,
+    .layanan-container2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 95%;
+    }
+
+    .kotak {
+        padding: 25px 15px;
+    }
+
+    .kotak2 {
+        padding: 15px 10px;
+    }
+
+    /* Kartu informasi menjadi vertikal */
+    .info-card {
+        flex-direction: column;
+        padding: 22px;
+        gap: 20px;
+    }
+
+    .gambar {
+        flex: auto;
+        width: 100%;
+    }
+
+    .gambar img {
+        height: 250px;
+    }
+
+    .informasi {
+        width: 92%;
+    }
+
+    .isi h2 {
+        font-size: 23px;
+    }
+}
+
+
+/* =========================
+   TAMPILAN HP
+========================= */
+@media screen and (max-width: 480px) {
+
+    .navbar {
+        height: 280px;
+    }
+
+    .hero-content {
+        margin-top: 60px;
+    }
+
+    .navbar h1.judul {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+    }
+
+    /* Menu navigasi lebih rapat */
+    .nav-links {
+        gap: 2px;
+        padding: 8px 2px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+        padding: 5px 7px;
+    }
+
+    /* Kotak layanan menjadi 1 kolom */
+    .layanan-container,
+    .layanan-container2 {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .kotak {
+        padding: 20px 15px;
+    }
+
+    .kotak2 {
+        padding: 15px;
+    }
+
+    .kotak h2 {
+        font-size: 16px;
+    }
+
+    /* Informasi layanan */
+    .info-card {
+        padding: 18px;
+    }
+
+    .gambar img {
+        height: 200px;
+    }
+
+    .isi h2 {
+        font-size: 21px;
+    }
+
+    .isi h3 {
+        font-size: 16px;
+    }
+
+    .isi p {
+        font-size: 14px;
+    }
+
+    /* Tabel jadwal */
+    .tabel th,
+    .tabel td {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+
+    .kontak {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
